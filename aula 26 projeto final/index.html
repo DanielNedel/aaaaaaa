@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/WhatsApp Image 2024-08-19 at 15.27.46.jpeg" alt="Meu Rosto" class="profile-image" id="imagem">
+        <div class="header-content">
+            <h1>Daniel Eduardo Nedel</h1>
+            <nav>
+                <a href="#sobremim">Sobre Mim</a>
+                <a href="#formação">Formação</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#formação">Informações</a>
+                <a href="#currículo">Currículo</a>
+                <a href="#experiência">Experiência</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="sobremim">
+            <h2><u>Sobre Mim</u></h2>
+            <p>Olá! Sou o Daniel, estudo informática na ETEP em portão, gosto muito de design gráfico, computador e jogos online, pretendo seguir por essa área junto com o que estou aprendendo atualmente.</p>
+        </section>
+
+        <section id="formação">
+            <h2><u>Formação</u></h2>
+            <li>Ensino fundamental completo - Irmão Weibert / 2014-2023</li>
+            <li>Ensino médio cursando - ETEP portão / 2024-?</li>
+            <li>3.000 Talentos TI completo - Introdução ao Java Script / 2024</li>
+            <li>3.000 Talentos TI cursando - Front-End / 2024</li>
+        </section>
+        
+        <section id="projetos">
+            <h2><u>Projetos</u></h2>
+            <div class="project-gallery">
+                <div class="project-item" onclick="showModal('project1')">
+                    <h3>Projeto 1</h3>
+                    <img src="imagens/brawlstats.PNG" alt="Projeto 1">
+                </div>
+            </div>
+        </section>
+        
+        <section id="informações">
+            <h2><u>Informações</u></h2>
+            <p>E-mail: <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcRzDQzDFtbGGKxvMzcJSjZzctKMJTjJkLJlxDNQspVwpnzlLWRRjwGKPRZlzNrJdMDZDLpMM">danieleduardonedel@gmail.com</a></p>
+            <p>Github: <a href="https://github.com/DanielNedel">https://github.com/DanielNedel</a></p>
+            <p>Intagram: <a href="https://www.instagram.com/daniel_rain17/">https://www.instagram.com/daniel_rain17/</a></p>
+            <p>WhatsApp: +55 51 99343-3407</p>
+        </section>
+        
+        <section id="currículo">
+            <h2><u>Currículo</u></h2>
+        <button id="botaobonito"><a href="Currículo.pdf" download>Clique aqui para acessar</a></button>
+        </section>
+        
+        <section id="experiência">
+            <h2><u>Experiência</u></h2>
+            <p>Nunca trabalhei</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Daniel Nedel. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
